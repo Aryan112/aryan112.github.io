@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <title>TechRecruit Pro</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo-section">
+          <img src="company-logo.png" alt="Company Logo" class="logo-image">
+          <h1 class="logo">TechRecruit Pro</h1>
+        </div>
+        <nav class="navigation">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Job Listings</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="cta-section">
+          <button class="cta-button">Post a Job</button>
+          <a href="login.htm" class="login-signup-button">Login/Sign Up</a>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+
+  <section class="hero">
+    <div class="container">
+      <h1>Hire the Best Talent</h1>
+      <p>Find top-notch software engineers, product managers, data scientists, and more.</p>
+      <div class="wrap">
+        <div class="search">
+           <input type="text" class="searchTerm" placeholder="What are you looking for?" id="searchTerm">
+           <button type="submit" class="searchButton">
+             <i class="fa fa-search"></i>
+          </button>
+        </div>
+     </div>     
+    </div>
+  </section>
+
+  <section class="search-results" id="searchResults">
+    <!-- Search results will be dynamically populated here -->
+  </section>
+  
+  <section class="job-categories">
+    <div class="container">
+      <div class="job-category">
+        <img src="software-engineer-icon.png" alt="Software Engineer">
+        <p>Software Engineers</p>
+      </div>
+      <div class="job-category">
+        <img src="product-manager-icon.png" alt="Product Manager">
+        <p>Product Managers</p>
+      </div>
+      <div class="job-category">
+        <img src="data-scientist-icon.png" alt="Data Scientist">
+        <p>Data Scientists</p>
+      </div>
+      <!-- Add more job categories here -->
+    </div>
+  </section>
+  
+  <section class="bubble-logos">
+    <div class="bubble-wrap">
+      <div class="bubbles"></div>
+    </div>
+  </section>
+
+  <section class="featured-jobs">
+    <div class="container">
+      <h2>Featured Job Listings</h2>
+      <div class="job-card">
+        <img src="job1-image.jpg" alt="Software Engineer Job">
+        <h3>Software Engineer</h3>
+        <p>Location: Bengaluru, India</p>
+        <p>Company: XYZ Tech Solutions</p>
+        <p>Salary Range: ₹12,00,000 - ₹15,00,000 per annum</p>
+        <p>Experience: 3-5 years</p>
+        <p>Job Type: Full-time</p>
+        <button id="myButton1">View Details</button>
+        <div id="myPopup1" class="popup">
+          <div class="popup-content">
+            <h3>Software Engineer - Job Details</h3>
+            <p>
+              We are seeking a skilled and motivated Software Engineer to join our dynamic team. As a Software Engineer, you will be responsible for developing and maintaining high-quality software solutions that meet our clients' needs. You will collaborate with cross-functional teams to design and implement innovative solutions to complex technical challenges. If you are passionate about cutting-edge technologies and enjoy working in a collaborative environment, we would love to hear from you.
+            </p>
+            <button id="closePopup1">Close</button>
+          </div>
+        </div>
+      </div>
+      <div class="job-card">
+        <img src="job2-image.jpg" alt="Product Manager Job">
+        <h3>Product Manager</h3>
+        <p>Location: Mumbai, India</p>
+        <p>Company: ABC Innovations</p>
+        <p>Salary Range: ₹18,00,000 - ₹22,00,000 per annum</p>
+        <p>Experience: 5-7 years</p>
+        <p>Job Type: Full-time</p>
+        <button id="myButton2">View Details</button>
+        <div id="myPopup2" class="popup">
+          <div class="popup-content">
+            <h3>Product Manager - Job Details</h3>
+            <p>
+              We are looking for an experienced Product Manager to join our team and lead the product development process. As a Product Manager, you will work closely with cross-functional teams to define product requirements, conduct market research, and drive the product roadmap. You will also be responsible for analyzing user feedback and data to continuously improve the product's performance and user experience.
+            </p>
+            <button id="closePopup2">Close</button>
+          </div>
+        </div>
+      </div>
+      <!-- Add more featured job listings here -->
+    </div>
+  </section>
+  
+
+  <section class="how-it-works">
+    <div class="container">
+      <h2>How It Works</h2>
+      <div class="how-it-works-step fade-in">
+        <img src="step1-icon.png" alt="Step 1" class="step-image" id="stepImage1">
+        <p>Step 1: Post Your Job</p>
+      </div>
+      <div class="how-it-works-step fade-in">
+        <img src="step2-icon.png" alt="Step 2" class="step-image" id="stepImage2">
+        <p>Step 2: Review Applications</p>
+      </div>
+      <div class="how-it-works-step fade-in">
+        <img src="step3-icon.png" alt="Step 3" class="step-image" id="stepImage3">
+        <p>Step 3: Hire the Best</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="container">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonial-slider">
+        <div class="testimonial">
+        <img src="emp1.jpg" alt="Employer 1">
+        <p>"TechRecruit Pro helped us find the perfect candidates quickly and efficiently. Highly recommended!"</p>
+        <span>- John Doe, CEO, XYZ Tech</span>
+      </div>
+      <div class="testimonial">
+        <img src="jobseek1.jpg" alt="Job Seeker 1">
+        <p>"Thanks to TechRecruit Pro, I found my dream job and couldn't be happier. They made the process seamless."</p>
+        <span>- Jane Smith, Data Scientist</span>
+      </div>
+      <!-- Add more testimonials here -->
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 TechRecruit Pro. All rights reserved.</p>
+      <ul class="social-links">
+        <li><a href="https://www.linkedin.com/in/aryan-bajpai-423411262/" style="color: whitesmoke;"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+        <li><a href="#" style="color: whitesmoke;"><i class="fab fa-discord"></i>Discord</a></li>
+        <li><a href="https://github.com/Aryan112" style="color: whitesmoke;"><i class="fab fa-github"></i>GitHub</a></li>
+        <li><a href="#" style="color: whitesmoke;"><i class="fab fa-instagram"></i>Instagram</a></li>
+      </ul>      
+    </div>
+  </footer>
+<script src="script.js"></script>
+<script src="https://cdn.rawgit.com/josephg/noisejs/master/perlin.js"></script>
+<script>
+  const SCROLL_SPEED = 0.3;
+const NOISE_SPEED = 0.004;
+const NOISE_AMOUNT = 5;
+const CANVAS_WIDTH = 2800;
+
+const bubblesEl = document.querySelector(".bubbles");
+const bubbleSpecs = [
+  { s: 0.6, x: 1134, y: 45 },
+  { s: 0.6, x: 1620, y: 271 },
+  { s: 0.6, x: 1761, y: 372 },
+  { s: 0.6, x: 2499, y: 79 },
+  { s: 0.6, x: 2704, y: 334 },
+  { s: 0.6, x: 2271, y: 356 },
+  { s: 0.6, x: 795, y: 226 },
+  { s: 0.6, x: 276, y: 256 },
+  { s: 0.6, x: 1210, y: 365 },
+  { s: 0.6, x: 444, y: 193 },
+  { s: 0.6, x: 2545, y: 387 },
+  { s: 0.8, x: 1303, y: 193 },
+  { s: 0.8, x: 907, y: 88 },
+  { s: 0.8, x: 633, y: 320 },
+  { s: 0.8, x: 323, y: 60 },
+  { s: 0.8, x: 129, y: 357 },
+  { s: 0.8, x: 1440, y: 342 },
+  { s: 0.8, x: 1929, y: 293 },
+  { s: 0.8, x: 2135, y: 198 },
+  { s: 0.8, x: 2276, y: 82 },
+  { s: 0.8, x: 2654, y: 182 },
+  { s: 0.8, x: 2783, y: 60 },
+  { x: 1519, y: 118 },
+  { x: 1071, y: 233 },
+  { x: 1773, y: 148 },
+  { x: 2098, y: 385 },
+  { x: 2423, y: 244 },
+  { x: 901, y: 385 },
+  { x: 624, y: 111 },
+  { x: 75, y: 103 },
+  { x: 413, y: 367 },
+  { x: 2895, y: 271 },
+  { x: 1990, y: 75 }
+];
+
+class Bubbles {
+  constructor(specs) {
+    this.bubbles = [];
+
+    specs.forEach((spec, index) => {
+      this.bubbles.push(new Bubble(index, spec));
+    });
+
+    requestAnimationFrame(this.update.bind(this));
+  }
+
+  update() {
+    this.bubbles.forEach((bubble) => bubble.update());
+    this.raf = requestAnimationFrame(this.update.bind(this));
+  }
+}
+
+class Bubble {
+  constructor(index, { x, y, s = 1 }) {
+    this.index = index;
+    this.x = x;
+    this.y = y;
+    this.scale = s;
+
+    this.noiseSeedX = Math.floor(Math.random() * 64000);
+    this.noiseSeedY = Math.floor(Math.random() * 64000);
+
+    this.el = document.createElement("div");
+    this.el.className = `bubble logo${this.index + 1}`;
+    bubblesEl.appendChild(this.el);
+  }
+
+  update() {
+    this.noiseSeedX += NOISE_SPEED;
+    this.noiseSeedY += NOISE_SPEED;
+    let randomX = noise.simplex2(this.noiseSeedX, 0);
+    let randomY = noise.simplex2(this.noiseSeedY, 0);
+
+    this.x -= SCROLL_SPEED;
+    this.xWithNoise = this.x + randomX * NOISE_AMOUNT;
+    this.yWithNoise = this.y + randomY * NOISE_AMOUNT;
+
+    if (this.x < -200) {
+      this.x = CANVAS_WIDTH;
+    }
+
+    this.el.style.transform = `translate(${this.xWithNoise}px, ${this.yWithNoise}px) scale(${this.scale})`;
+  }
+}
+
+// For perlin noise
+noise.seed(Math.floor(Math.random() * 6000));
+
+const bubbles = new Bubbles(bubbleSpecs);
+
+</script>
+</body>
+</html>
