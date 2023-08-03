@@ -1,0 +1,566 @@
+/* Reset Styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+}
+
+/* Header Styles */
+header {
+  background-color: #fff;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #377dff;
+}
+
+.navigation {
+  margin-top: 10px;
+}
+
+.navigation li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.cta-section {
+  display: flex;
+  align-items: center;
+}
+
+.cta-button {
+  background-color: #377dff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.cta-button:hover {
+  background-color: #275acc;
+}
+
+.login-signup-button {
+  text-decoration: none;
+  color: #377dff;
+  font-size: 16px;
+}
+
+.login-signup-button:hover {
+  text-decoration: underline;
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.hamburger span {
+  width: 100%;
+  height: 4px;
+  background-color: #333;
+  transition: transform 0.3s ease;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .header-content {
+    flex-wrap: wrap;
+  }
+
+  .navigation {
+    flex: 1 0 100%;
+    margin-top: 20px;
+  }
+
+  .navigation li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* Search Bar Styles */
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchForm {
+  flex: 1;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus {
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Resize the wrap to see the search bar change! */
+.wrap {
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Search Results Styles */
+.search-results {
+  padding: 40px 0;
+}
+
+.search-results .job-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.search-results .job-card.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.search-results .job-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.search-results .job-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.search-results .job-card p {
+  color: #666;
+}
+
+.search-results .job-card button {
+  background-color: #377dff;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-results .job-card button:hover {
+  background-color: #275acc;
+}
+
+/* Global Styles */
+a {
+  text-decoration: none;
+  color: #377dff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section Styles */
+.hero {
+  background-color: #377dff;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+/* bubble wrap for logos */
+.bubble-wrap {
+  overflow: hidden;
+  height: 600px;
+}
+
+.bubbles {
+  position: relative;
+  background: salmon;
+}
+
+.bubble {
+  position: absolute;
+  width: 152px;
+  height: 152px;
+  border-radius: 50%;
+  box-shadow: 
+    0 15px 35px rgba(0, 0, 0, 0.1),
+    0 3px 10px rgba(0, 0, 0, 0.1);
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9332/stripe-logo-bubbles-spritesheet.png);
+  background-size: 1076px 1076px;
+}
+
+.logo1 { background-position:   0      0; }
+.logo2 { background-position:  -154px  0; }
+.logo3 { background-position:  -308px  0; }
+.logo4 { background-position:  -462px  0; }
+.logo5 { background-position:  -616px  0; }
+.logo6 { background-position:  -770px  0; }
+.logo7 { background-position:  -924px  0; }
+.logo8 { background-position:   0     -154px; }
+.logo9 { background-position:  -154px -154px; }
+.logo10 { background-position: -308px -154px; }
+.logo11 { background-position: -462px -154px; }
+.logo12 { background-position: -616px -154px; }
+.logo13 { background-position: -770px -154px; }
+.logo14 { background-position: -924px -154px; }
+.logo15 { background-position:  0     -308px; }
+.logo16 { background-position: -154px -308px; }
+.logo17 { background-position: -308px -308px; }
+.logo18 { background-position: -462px -308px; }
+.logo19 { background-position: -616px -308px; }
+.logo20 { background-position: -770px -308px; }
+.logo21 { background-position: -924px -308px; }
+.logo22 { background-position:  0     -462px; }
+.logo23 { background-position: -154px -462px; }
+.logo24 { background-position: -308px -462px; }
+.logo25 { background-position: -462px -462px; }
+.logo26 { background-position: -616px -462px; }
+.logo27 { background-position: -770px -462px; }
+.logo28 { background-position: -924px -462px; }
+.logo29 { background-position:  0     -616px; }
+.logo30 { background-position: -154px -616px; }
+.logo31 { background-position: -308px -616px; }
+.logo32 { background-position: -462px -616px; }
+.logo33 { background-position: -616px -616px; }
+
+/* Job Categories Section Styles */
+.job-categories {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.job-category {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.job-category img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+/* Featured Job Listings Styles */
+.featured-jobs {
+  padding: 40px 0;
+}
+
+.job-card {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.job-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.popup {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+
+.popup-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888888;
+  width: 30%;
+  font-weight: bolder;
+}
+
+.popup-content button {
+  display: block;
+  margin: 0 auto;
+}
+
+.show {
+  display: block;
+}
+
+/* How It Works Section Styles */
+.how-it-works {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.how-it-works-step {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.how-it-works-step img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.how-it-works-step:hover img {
+  transform: scale(1.1);
+}
+
+.how-it-works-step::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  margin-top: -40px;
+  margin-left: -40px;
+  border: 2px solid #377dff;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(0.9); /* Adjust the scale to expand the ring slightly */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.how-it-works-step:hover::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.how-it-works-content {
+  margin-top: 20px;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+.how-it-works-step h4 {
+  margin-top: 10px;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 18px;
+  color: #377dff;
+  font-weight: bold;
+}
+
+/* Additional content for "How It Works" section */
+.how-it-works-content p {
+  margin-top: 10px;
+}
+
+/* Media Queries - if needed */
+@media screen and (max-width: 768px) {
+  /* Add specific styles for smaller screens, if needed */
+}
+
+/* Testimonials Section Styles */
+.testimonials {
+  padding: 40px 0;
+}
+
+.testimonial img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.testimonial span {
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+}
+
+.testimonial-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial {
+  width: 300px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.testimonial img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.testimonial span {
+  font-weight: bold;
+  color: #377dff;
+}
+
+/* Hover effect for testimonials */
+.testimonial:hover {
+  transform: scale(1.1);
+}
+
+/* Font effect for testimonials */
+.testimonial p, .testimonial span {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Text wrap for testimonials */
+.testimonial-slider {
+  flex-wrap: wrap;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .hero {
+    padding: 50px 0;
+  }
+
+  .job-category {
+    margin: 0 5px;
+  }
+}
