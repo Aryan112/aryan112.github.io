@@ -1,0 +1,145 @@
+/* Add scrollbar styles */
+body::-webkit-scrollbar {
+	width: 10px;
+  }
+  
+  body::-webkit-scrollbar-track {
+	background: #f1f1f1;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 5px;
+  }
+  
+  body {
+	/* Replace 'images.jpg' with the URL or relative path of your background image */
+	background-image: url('images.jpg');
+	/* You can customize how the image is displayed using the background properties below */
+	background-size: cover; /* or 'contain', 'auto', etc. */
+	background-repeat: no-repeat;
+	background-position: center center;
+	/* If you want a fixed background, use the following property, otherwise, you can remove it */
+	background-attachment: fixed;
+	overflow-y: scroll;
+	font-family: Arial, sans-serif;
+	margin: 0;
+  }
+  
+  .home {
+	overflow: hidden;
+	background-color: transparent;
+	color: white;
+	width: 100%;
+	text-align: center;
+	font-size: 22px;
+  }
+  .home.p{
+	color: #888;
+  }
+  
+/* button for home tab*/
+.button-31 {
+  background-color: #222;
+  border-radius: 4px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  max-width: none;
+  min-height: 44px;
+  min-width: 10px;
+  outline: none;
+  overflow: hidden;
+  padding: 9px 20px 8px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+}
+
+.button-31:hover,
+.button-31:focus {
+  opacity: .75;
+}
+  .about {
+	overflow: hidden;
+	background-color: whitesmoke;
+	color: black;
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+  }
+  
+  /* Style the header, home, about, and footer sections */
+  /* Your existing header, home, about, and footer styles go here */
+  
+  /* ... */
+  
+  /* Style the header with a black background and some padding */
+  .header {
+	overflow: hidden;
+	background-color: black;
+	padding: 20px 10px;
+	display: flex;
+	align-items: center;
+  }
+  
+  .logo {
+	font-size: 24px;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: "Segoe UI", Arial, sans-serif;
+  }
+  
+  .header-right {
+	margin-left: auto;
+  }
+  
+  .header a {
+	color: whitesmoke;
+	text-decoration: none;
+	margin: 0 10px;
+  }
+  
+  .header a:hover {
+	color: #ddd;
+  }
+  
+  .header a.active {
+	color: gray;
+  }
+  
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 500px) {
+	.header a {
+	  float: none;
+	  display: block;
+	  text-align: left;
+	}
+	.header-right {
+	  float: none;
+	}
+  }
+  
+  /* footer */
+  .footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: black;
+	color: white;
+	text-align: center;
+  }
+  
